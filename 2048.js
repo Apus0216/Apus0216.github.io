@@ -48,22 +48,48 @@ function renderBoard() {
 
 // 处理向左移动操作
 function moveLeft() {
-    // 实现向左移动逻辑
+    let moved = false;
+    for (let i = 0; i < size; i++) {
+        for (let j = 1; j < size; j++) {
+            if (board[i][j] !== 0) {
+                let k = j - 1;
+                while (k >= 0 && (board[i][k] === 0 || board[i][k] === board[i][j])) {
+                    if (board[i][k] === board[i][j]) {
+                        board[i][k] *= 2;
+                        board[i][j] = 0;
+                        moved = true;
+                        break;
+                    }
+                    if (board[i][k] === 0) {
+                        board[i][k] = board[i][j];
+                        board[i][j] = 0;
+                        moved = true;
+                    }
+                    k--;
+                }
+            }
+        }
+    }
+    if (moved) generateNewNumber();
+    renderBoard();
 }
 
 // 处理向右移动操作
 function moveRight() {
     // 实现向右移动逻辑
+    // 你可以仿照 moveLeft() 方法的实现来编写 moveRight() 方法
 }
 
 // 处理向上移动操作
 function moveUp() {
     // 实现向上移动逻辑
+    // 你可以仿照 moveLeft() 方法的实现来编写 moveUp() 方法
 }
 
 // 处理向下移动操作
 function moveDown() {
     // 实现向下移动逻辑
+    // 你可以仿照 moveLeft() 方法的实现来编写 moveDown() 方法
 }
 
 // 初始化游戏
@@ -81,4 +107,3 @@ document.addEventListener("keydown", function(event) {
         moveDown();
     }
 });
-
