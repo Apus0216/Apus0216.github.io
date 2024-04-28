@@ -3,33 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>2048</title>
-    <style>
-        /* 样式 */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(4, 100px);
-            grid-gap: 10px;
-            margin-top: 20px;
-        }
-        .cell {
-            width: 100px;
-            height: 100px;
-            background-color: #ccc;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
-        }
-    </style>
+    <title>小游戏网站</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>2048</h1>
-    <div class="container" id="game"></div>
-    <script src="2048.js" defer></script>
+    <header>
+        <h1>小游戏网站</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="contact.html">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>游戏列表</h2>
+            <ul>
+                <li><a href="2048.html">2048</a></li>
+                <!-- 其他游戏链接 -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>联系邮箱：<a href="mailto:apus0216@163.com">apus0216@163.com</a></p>
+    </footer>
 </body>
 </html>
