@@ -70,40 +70,4 @@ function moveLeft() {
             }
         }
     }
-    if (moved) generateNewNumber();
-    renderBoard();
-}
-
-// 处理向右移动操作
-function moveRight() {
-    // 实现向右移动逻辑
-    // 你可以仿照 moveLeft() 方法的实现来编写 moveRight() 方法
-}
-
-// 处理向上移动操作
-function moveUp() {
-    // 实现向上移动逻辑
-    // 你可以仿照 moveLeft() 方法的实现来编写 moveUp() 方法
-}
-
-// 处理向下移动操作
-function moveDown() {
-    // 实现向下移动逻辑
-    // 你可以仿照 moveLeft() 方法的实现来编写 moveDown() 方法
-}
-
-// 初始化游戏
-initGame();
-
-// 监听键盘事件
-document.addEventListener("keydown", function(event) {
-    if (event.key === "ArrowLeft") {
-        moveLeft();
-    } else if (event.key === "ArrowRight") {
-        moveRight();
-    } else if (event.key === "ArrowUp") {
-        moveUp();
-    } else if (event.key === "ArrowDown") {
-        moveDown();
-    }
-});
+    if (moved) generateNewNumber
