@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #E60012; /* Switch 主题的红色 */
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #E60012;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#featured-games {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    width: 300px;
+    margin: 20px;
+}
+
+.game img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.game h3 {
+    margin-top: 10px;
+}
+
+.game p {
+    font-size: 14px;
+    color: #555;
+}
+
+.game button {
+    background-color: #E60012;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.game button:hover {
+    background-color: #CC0000;
+}
