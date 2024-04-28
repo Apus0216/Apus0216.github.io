@@ -3,85 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>欢迎来到 Apus 的个人网站</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 {
-      margin: 0;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-      text-align: center;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 10px;
-    }
-    nav ul li a {
-      text-decoration: none;
-      color: #fff;
-    }
-    section {
-      padding: 20px;
-    }
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <title>二次元小游戏乐园</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <header>
-    <h1>欢迎来到 Apus 的个人网站</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">关于我</a></li>
-        <li><a href="#projects">项目</a></li>
-        <li><a href="#contact">联系我</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>欢迎来到二次元小游戏乐园</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">首页</a></li>
+          <li><a href="#games">游戏</a></li>
+          <li><a href="#about">关于我们</a></li>
+          <li><a href="#contact">联系我们</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>关于我</h2>
-    <p>我是 Apus，一个热爱编程和探索科技的人。</p>
-    <p>欢迎来到我的个人网站，希望你在这里能找到有趣的内容！</p>
+  <section id="home">
+    <div class="container">
+      <h2>欢迎来到二次元小游戏乐园</h2>
+      <p>在这里，你可以尽情享受各种二次元风格的小游戏，与可爱的角色一起冒险、探索和战斗！</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>项目</h2>
-    <p>这里将展示一些我参与过的项目，敬请期待！</p>
+  <section id="games">
+    <div class="container">
+      <h2>游戏</h2>
+      <div class="game">
+        <img src="game1.jpg" alt="游戏1">
+        <h3>游戏名称1</h3>
+        <p>游戏介绍...</p>
+        <a href="#">开始游戏</a>
+      </div>
+      <div class="game">
+        <img src="game2.jpg" alt="游戏2">
+        <h3>游戏名称2</h3>
+        <p>游戏介绍...</p>
+        <a href="#">开始游戏</a>
+      </div>
+      <!-- 更多游戏 -->
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>关于我们</h2>
+      <p>二次元小游戏乐园是一个致力于提供精彩二次元风格游戏的网站，我们团队由一群热爱二次元文化的年轻人组成。</p>
+    </div>
   </section>
 
   <section id="contact">
-    <h2>联系我</h2>
-    <p>如果你有任何问题、建议或合作意向，欢迎通过以下方式联系我：</p>
-    <ul>
-      <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
-      <li>微信: <a href="wechat://your-wechat-id">your-wechat-id</a></li>
-    </ul>
+    <div class="container">
+      <h2>联系我们</h2>
+      <p>如果你有任何疑问或建议，请随时联系我们。</p>
+      <ul>
+        <li>Email: <a href="mailto:contact@example.com">contact@example.com</a></li>
+        <li>微信: <a href="wechat://your-wechat-id">your-wechat-id</a></li>
+      </ul>
+    </div>
   </section>
 
   <footer>
-    <p>© 2024 Apus. All Rights Reserved.</p>
+    <div class="container">
+      <p>© 2024 二次元小游戏乐园. All Rights Reserved.</p>
+    </div>
   </footer>
 
 </body>
