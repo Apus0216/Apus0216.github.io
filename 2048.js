@@ -70,4 +70,73 @@ function moveLeft() {
             }
         }
     }
-    if (moved) generateNewNumber
+    if (moved) generateNewNumber();
+    renderBoard();
+}
+
+// 处理向右移动操作
+function moveRight() {
+    let moved = false;
+    for (let i = 0; i < size; i++) {
+        for (let j = size - 2; j >= 0; j--) {
+            if (board[i][j] !== 0) {
+                let k = j + 1;
+                while (k < size && (board[i][k] === 0 || board[i][k] === board[i][j])) {
+                    if (board[i][k] === board[i][j]) {
+                        board[i][k] *= 2;
+                        board[i][j] = 0;
+                        moved = true;
+                        break;
+                    }
+                    if (board[i][k] === 0) {
+                        board[i][k] = board[i][j];
+                        board[i][j] = 0;
+                        moved = true;
+                    }
+                    k++;
+                }
+            }
+        }
+    }
+    if (moved) generateNewNumber();
+    renderBoard();
+}
+
+// 处理向上移动操作
+function moveUp() {
+    let moved = false;
+    for (let j = 0; j < size; j++) {
+        for (let i = 1; i < size; i++) {
+            if (board[i][j] !== 0) {
+                let k = i - 1;
+                while (k >= 0 && (board[k][j] === 0 || board[k][j] === board[i][j])) {
+                    if (board[k][j] === board[i][j]) {
+                        board[k][j] *= 2;
+                        board[i][j] = 0;
+                        moved = true;
+                        break;
+                    }
+                    if (board[k][j] === 0) {
+                        board[k][j] = board[i][j];
+                        board[i][j] = 0;
+                        moved = true;
+                    }
+                    k--;
+                }
+            }
+        }
+    }
+    if (moved) generateNewNumber();
+    renderBoard();
+}
+
+// 处理向下移动操作
+function moveDown() {
+    let moved = false;
+    for (let j = 0; j < size; j++) {
+        for (let i = size - 2; i >= 0; i--) {
+            if (board[i][j] !== 0) {
+                let k = i + 1;
+                while (k < size && (board[k][j] === 0 || board[k][j] === board[i][j])) {
+                    if (board[k][j] === board[i][j]) {
+                        board[k][j] *=
